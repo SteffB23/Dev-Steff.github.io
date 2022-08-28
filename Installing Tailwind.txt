@@ -1,0 +1,55 @@
+Tailwind on codepen:
+
+go to css settings and add as a resource:
+
+https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.0.1/tailwind.min.css
+
+Tailwind on VSC using CDN:
+
+plase script in the head: <script src="https://cdn.tailwindcss.com"></script>
+
+CLI Method:
+
+Install Tailwind CSS 
+Install tailwindcss via npm, and create your tailwind.config.js file
+
+In terminal:
+
+1. npm init -y (Creates package.JSON)
+
+2. npm install -D tailwindcss (dev dependencies)
+ 
+3. npx tailwindcss init (Creates Tailwind.config.js file)
+
+4. add syntax to content block in config.js: content: ["./src/**/*.{html,js}"],
+	EXAMPLE: if you have HTML in a folder such as layouts or dist then: './layouts/*.html'
+
+5. Add main 3 Tailwind Directives in CSS file: 
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+6. Make output folder in the layouts(directory) folder:/css/syle.css (AND MAKE SURE ITS LINKED IN HTML!
+
+7. STart the CLI Build process: npx tailwindcss -i tailwind.css -o ./layouts/css/style.css --watch
+
+DONE!
+
+Extra:
+
+Tailwind Typography plug-in:
+
+1. npm install @tailwindcss/typography
+2. search documentation for official plug-ins
+3. Plugins can be added to your project by installing them via npm, then adding them to your tailwind.config.js file:
+
+tailwind.config.js
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+  ]
+}
