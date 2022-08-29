@@ -1,3 +1,27 @@
+window.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.querySelector('#overlay')
+    const productBtn = document.querySelector('#project-1')
+    const closeBtn = document.querySelector('#close-modal')
+    const exitBtn = document.querySelector('#exit-modal')
+    
+    //Refactored JS version to make a variable that contains a event listener function
+    const toggleModal = () => {
+      overlay.classList.toggle('hidden')
+      overlay.classList.toggle('flex')
+    }
+    
+    productBtn.addEventListener('click', toggleModal)
+    exitBtn.addEventListener('click', toggleModal)
+    //Non-Refactored way of using arrow function for event listener
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.toggle('hidden')
+      overlay.classList.toggle('flex')
+      
+    })
+    
+    
+  })
+
 const header = document.querySelector("header");
 
 window.addEventListener ("scroll", function() {

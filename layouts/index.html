@@ -35,8 +35,8 @@
 		<div class="home-text">
 			<h4>Hello, I hope all is well</h4>
 			<h1>I'm Stephan <br> Br<span>ookens</span></h1>
-			<h3>Front-End Developer</h3>
-			<a href="#" class="btn">Hire Me</a>
+			<h3>Front-End <span>Developer</span> <br> Shopify <span>Partner</span></h3>
+			<a href="https://www.upwork.com/freelancers/~013c0b305f51156e83" class="btn">Hire Me</a>
 		</div>
 	</section>
 
@@ -111,20 +111,59 @@
         <!-- Languages bar -->
   <div class="justify-center flex flex-wrap w-full h-auto mx-auto space-x-6 py-12 px-2" id="languages" >
     
-    <img src="https://assets.codepen.io/6836864/tailwindcss-icon-svgrepo-com+%281%29.svg" alt="" class="w-16 h-12 my-8">
-    <img src="https://assets.codepen.io/6836864/html-5-svgrepo-com.svg" alt="" class="w-16 h-12 my-8">
-    <img src="https://assets.codepen.io/6836864/css-3-logo-svgrepo-com.svg" alt="" class="w-16 h-12 my-8">
-    <img src="https://assets.codepen.io/6836864/js-svgrepo-com.svg" alt="" class="w-16 h-12 my-8">
-    <img src="https://assets.codepen.io/6836864/alpinejs+%281%29.svg" alt="" class="w-16 h-12 my-8">
-    <img src="https://assets.codepen.io/6836864/shopify-svgrepo-com.svg" alt="" class="w-16 h-12 my-8">
+    <!-- My Languages-->
     
+    <a href="https://tailwindcss.com/" class="">
+    <img src="https://assets.codepen.io/6836864/tailwindcss-icon-svgrepo-com+%281%29.svg" alt="" class="w-16 h-12 my-8 cursor-pointer hover:animate-bounce ease-in duration-300">
+    </a>
+    
+    <a href="https://www.codecademy.com/pages/learn-html-and-css-with-codecademy-pro?g_network=g&g_device=c&g_adid=518718840372&g_keyword=learn%20html&g_acctid=243-039-7011&g_adtype=search&g_adgroupid=102526215098&g_keywordid=aud-1122464209802:kwd-17983641&g_campaign=US+Language%3A+Basic+-+Exact&g_campaignid=10030170703&utm_term=learn%20html&utm_campaign=&utm_content=518718840372&utm_id=t_aud-1122464209802:kwd-17983641:ag_102526215098:cp_10030170703:n_g:d_c&utm_source=google&utm_medium=paid-search&utm_term=learn%20html&utm_campaign=&utm_content=518718840372&gclid=CjwKCAjwpKyYBhB7EiwAU2Hn2XruU7FKSFz-uC0ijyc8ZyBc0sQkE3jl1iV4LB8v0QAkG_2Nz7RjwRoCvV4QAvD_BwE" class="">
+    <img src="https://assets.codepen.io/6836864/html-5-svgrepo-com.svg" alt="" class="w-16 h-12 my-8 cursor-pointer">
+    </a>
+    
+    <a href="https://web.dev/learn/css/" class="">
+    <img src="https://assets.codepen.io/6836864/css-3-logo-svgrepo-com.svg" alt="" class="w-16 h-12 my-8 cursor-pointer">
+    </a>
+    
+    <a href="https://www.jsmastery.pro/" class="">
+    <img src="https://assets.codepen.io/6836864/js-svgrepo-com.svg" alt="" class="w-16 h-12 my-8 cursor-pointer">
+    </a>    
+    
+    <a href="https://alpinejs.dev/" class="">
+    <img src="https://assets.codepen.io/6836864/alpinejs+%281%29.svg" alt="" class="w-16 h-12 my-8 cursor-pointer">
+    </a>    
+    
+    <a href="https://www.shopify.com/partners" class="">
+    <img src="https://assets.codepen.io/6836864/shopify-svgrepo-com.svg" alt="" class="w-16 h-12 my-8 cursor-pointer">
+    </a>
+
   </div>
   <!-- End -->
 		</div>
 
 		<div class="portfolio-content">
 			<div class="row">
-				<img src="https://assets.codepen.io/6836864/The+Qari+home+page+Snip+final+final.png" id="project">
+                <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center z-50" id="overlay" > <!-- Inset-0 stretches the entire box to the whole screen. opacity gives it a feeling of a next step animation. -->
+                    <div class="bg-gray-200 max-w-xs py-2 px-3 rounded shadow-xl text-gray-800"><!-- max-w-sm ensures that the modal content does no fill the entire screen. can be changed to lg or 2xl depending if you add more content -->
+                      <div class="flex justify-between items-center"> <!-- Flex Moves the X icon next to the header text & items-center moves the X on the same horizontal axis as the Text -->
+                        <h4 class="text-lg font-bold p-4">The Qari School</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer p-1 rounded full hover:bg-gray-300" id="close-modal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                      </div>      
+                      <div class="mt-2 text-sm">
+                        <img src="\layouts\images\Qari Preview 2.gif" alt="" class="w-6 h-6 rounded p-4">
+                        <p class="p-4">Utilizes a clean interface with smooth scrolling and various hover effects!</p>
+                      </div>
+                      <div class="mt-3 flex justify-end space-x-5 py-2">
+                        <button class="px-3 py-1 rounded hover:bg-red-300 hover-bg-opacity-50 hover:text-red-900" id="exit-modal">Exit</button>
+                       <a href="https://codepen.io/KodeKreatorz/live/GRxwXEP/90e16778ea0ca7008e22baed63790db7" class=""> <button class="px-3 py-2 bg-blue-600 text-white rounded hover:bg-white hover:text-blue-600">See Full Site</button> </a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!-- End -->
+				<img src="https://assets.codepen.io/6836864/The+Qari+home+page+Snip+final+final.png" id="project-1">
 				<div class="main-row">
 					<div class="row-text">
             <a href="https://codepen.io/KodeKreatorz/live/GRxwXEP/90e16778ea0ca7008e22baed63790db7" class="">
