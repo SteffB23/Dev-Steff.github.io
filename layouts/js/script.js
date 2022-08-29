@@ -1,3 +1,4 @@
+// Qari Modal
 window.addEventListener('DOMContentLoaded', () => {
     const overlay = document.querySelector('#overlay')
     const productBtn = document.querySelector('#project-1')
@@ -19,8 +20,30 @@ window.addEventListener('DOMContentLoaded', () => {
       
     })
     
+    const overlay2 = document.querySelector('#overlay2')
+    const productBtn2 = document.querySelector('#project-2')
+    const closeBtn2 = document.querySelector('#close-modal2')
+    const exitBtn2 = document.querySelector('#exit-modal2')
     
-  })
+    //Refactored JS version to make a variable that contains a event listener function
+    const toggleModal2 = () => {
+      overlay2.classList.toggle('hidden')
+      overlay2.classList.toggle('flex')
+    }
+    
+    productBtn2.addEventListener('click', toggleModal2)
+    exitBtn2.addEventListener('click', toggleModal2)
+    //Non-Refactored way of using arrow function for event listener
+    closeBtn2.addEventListener('click', () => {
+      overlay2.classList.toggle('hidden')
+      overlay2.classList.toggle('flex')
+      
+    })
+
+    
+})
+
+
 
 const header = document.querySelector("header");
 
