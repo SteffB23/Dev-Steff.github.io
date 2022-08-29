@@ -4,6 +4,14 @@ window.addEventListener('DOMContentLoaded', () => {
     const productBtn = document.querySelector('#project-1')
     const closeBtn = document.querySelector('#close-modal')
     const exitBtn = document.querySelector('#exit-modal')
+
+    /* 
+    const qariModal = overlay, productBtn, closeBtn, exitBtn;
+        const mcrModal = overlay2, productBtn2, closeBtn2, exitBtn2;
+            const sturdyModal = overlay3, productBtn3, closeBtn3, exitBtn3;
+                const futuristicModal = overlay4, productBtn4, closeBtn4, exitBtn4;
+
+    */
     
     //Refactored JS version to make a variable that contains a event listener function
     const toggleModal = () => {
@@ -69,6 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const toggleModal4 = () => {
       overlay4.classList.toggle('hidden')
       overlay4.classList.toggle('flex')
+      
     }
     
     productBtn4.addEventListener('click', toggleModal4)
