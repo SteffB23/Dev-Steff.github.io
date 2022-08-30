@@ -247,9 +247,11 @@ header.sticky{
 .row-icon i{
 	font-size: 21px;
 }
+
 .row:hover{
-	transform: scale(1.01) translateY(-5px);
+	/*transform: scale(1.01) translateY(-5px);*/
 	cursor: pointer;
+	opacity: .9;
 }
 
 .contact{
