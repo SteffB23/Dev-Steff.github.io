@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const productBtn = document.querySelector('#project-1')
     const closeBtn = document.querySelector('#close-modal')
     const exitBtn = document.querySelector('#exit-modal')
-
+    
     /* 
     const qariModal = overlay, productBtn, closeBtn, exitBtn;
         const mcrModal = overlay2, productBtn2, closeBtn2, exitBtn2;
@@ -73,6 +73,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const closeBtn4 = document.querySelector('#close-modal4')
     const exitBtn4 = document.querySelector('#exit-modal4')
     
+
+
+
     //Refactored JS version to make a variable that contains a event listener function
     const toggleModal4 = () => {
       overlay4.classList.toggle('hidden')
@@ -91,6 +94,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     
 })
+
+function openWindow() {
+ openedWindow = window.open('#overlay');
+}
+
+function closeOpenedWindow() {
+ openedWindow.close();
+}
 
 
 
@@ -121,4 +132,13 @@ const sr = ScrollReveal ({
 
 sr.reveal('.home-text',{delay:190, origin:'bottom'})
 
-sr.reveal('.about,.services,.portfolio,.contact',{delay:200, origin:'bottom'})
+sr.reveal('.about,.services,.contact',{delay:200, origin:'bottom'})
+
+// Show some love -->
+
+  kofiWidgetOverlay.draw('devsteff', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#2979FF',
+    'floating-chat.donateButton.text-color': '#fff'
+  });

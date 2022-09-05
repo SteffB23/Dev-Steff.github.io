@@ -226,7 +226,8 @@ header.sticky{
 	padding: 25px;
 	background: #12141c;
 	border-radius: 0.5rem;
-	transition: all .40s ease;
+	transition: all .40s ease !important;
+	
 }
 .main-row{
 	display: flex;
@@ -249,7 +250,7 @@ header.sticky{
 }
 
 .row:hover{
-	/*transform: scale(1.01) translateY(-5px);*/
+	transform: scale(1.01) translateY(-5px) !important;
 	cursor: pointer;
 	opacity: .9;
 }
