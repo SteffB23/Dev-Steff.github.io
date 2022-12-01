@@ -92,6 +92,54 @@ window.addEventListener('DOMContentLoaded', () => {
       
     })
 
+    const overlay5 = document.querySelector('#overlay5')
+    const productBtn5 = document.querySelector('#project-5')
+    const closeBtn5 = document.querySelector('#close-modal5')
+    const exitBtn5 = document.querySelector('#exit-modal5')
+    
+
+
+
+    //Refactored JS version to make a variable that contains a event listener function
+    const toggleModal5 = () => {
+      overlay5.classList.toggle('hidden')
+      overlay5.classList.toggle('flex')
+      
+    }
+    
+    productBtn5.addEventListener('click', toggleModal5)
+    exitBtn5.addEventListener('click', toggleModal5)
+    //Non-Refactored way of using arrow function for event listener
+    closeBtn5.addEventListener('click', () => {
+      overlay5.classList.toggle('hidden')
+      overlay5.classList.toggle('flex')
+      
+    })
+
+    const overlay6 = document.querySelector('#overlay6')
+    const productBtn6 = document.querySelector('#project-6')
+    const closeBtn6 = document.querySelector('#close-modal6')
+    const exitBtn6 = document.querySelector('#exit-modal6')
+    
+
+
+
+    //Refactored JS version to make a variable that contains a event listener function
+    const toggleModal6 = () => {
+      overlay6.classList.toggle('hidden')
+      overlay6.classList.toggle('flex')
+      
+    }
+    
+    productBtn6.addEventListener('click', toggleModal6)
+    exitBtn6.addEventListener('click', toggleModal6)
+    //Non-Refactored way of using arrow function for event listener
+    closeBtn6.addEventListener('click', () => {
+      overlay6.classList.toggle('hidden')
+      overlay6.classList.toggle('flex')
+      
+    })
+
     
 })
 

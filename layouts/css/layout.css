@@ -39,6 +39,7 @@ header{
 	padding: 22px 16%;
 	border-bottom: 1px solid transparent;
 	transition: all .40s ease;
+	opacity: 0.9;
 }
 .logo img{
 	width: 55px;
