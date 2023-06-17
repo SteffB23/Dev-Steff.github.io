@@ -186,7 +186,7 @@ sr.reveal('.about,.services,.contact',{delay:200, origin:'bottom'})
 
   kofiWidgetOverlay.draw('devsteff', {
     'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.text': 'Charity',
     'floating-chat.donateButton.background-color': '#2979FF',
     'floating-chat.donateButton.text-color': '#fff'
   });
